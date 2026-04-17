@@ -1,0 +1,12 @@
+# Arquivos compilados
+*.o
+*.out
+
+# Executável do projeto
+minishell
+
+# Arquivos do VS Code
+.vscode/
+
+# Arquivos de debug
+*.dSYM
