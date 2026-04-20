@@ -10,8 +10,6 @@ void shell_loop(void) {
 
         if (command[0] == '\0') continue;
         
-
-        // Comandos Built-in (executados pelo próprio shell)
         if (strcmp(command, "exit") == 0) {
             break;
         }
@@ -21,7 +19,7 @@ void shell_loop(void) {
             if (chdir(path) != 0) {
                 perror("minishell: cd");
             }
-            continue; // Pula o fork e volta pro prompt
+            continue; 
         }
 
         // Comandos Externos
